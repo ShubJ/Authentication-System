@@ -28,6 +28,8 @@ A robust backend API service for JWT authentication with role-based access contr
 
 ## How to Run the Project
 
+### Local Development
+
 1. Seed the database with test users:
 
    ```bash
@@ -38,6 +40,28 @@ A robust backend API service for JWT authentication with role-based access contr
 
    ```bash
    npm run dev
+   ```
+
+### Docker Setup
+
+1. Start the Docker containers:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+   The seed script will automatically run before the main application starts, ensuring test users are available in the database.
+
+2. To run in detached mode:
+
+   ```bash
+   docker-compose up -d --build
+   ```
+
+3. To stop the containers:
+
+   ```bash
+   docker-compose down
    ```
 
 ## Project Structure
