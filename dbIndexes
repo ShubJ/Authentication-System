@@ -1,0 +1,9 @@
+// USERS COLLECTION INDEXES
+db.users.createIndex(
+  { email: 1 },
+  {
+    unique: true,
+    background: true,
+    name: "email_unique_idx",
+  }
+);
